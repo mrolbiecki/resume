@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{calc}
+\usepackage[top=0.5in,bottom=0.63in,right=0.75in,left=0.75in]{geometry}
+\usepackage{hyperref}
+% \usepackage{times}
+\usepackage{enumitem}
+\usepackage{fontenc}
+\usepackage{tgbonum}
+\usepackage{subfiles}
+\usepackage{titlesec} 
+
+\titlespacing*{\section}{0pt}{1\baselineskip}{0.2\baselineskip}
+
+\setlist[enumerate]{topsep=0pt}
+\setlist[itemize]{noitemsep,topsep=0pt}
+
+\newlength{\remaining}
+\renewcommand{\section}[1]{%
+  \vspace{0.4em}\setlength{\remaining}{\textwidth-\widthof{\uppercase{#1}}}
+    \noindent\underline{\fontsize{9}{15}\bfseries\uppercase{#1}\hspace*{\remaining}} \\
+}
+\renewcommand{\subsection}[3]{
+    \noindent\textbf{#1} | \emph{#2} \hfill #3
+}
+\pagenumbering{gobble}
+
+\begin{document}
+    \fontencoding{T1}
+    \fontfamily{phv}
+    \fontsize{9}{15}
+    \selectfont
+    \begin{center}
+        \begin{center}
+            \Huge\bfseries Marcin Rolbiecki
+            \vspace{1em}
+        \end{center}
+            \begin{tabular}{c c cc}
+                \href{tel:+48 512 540 840}{+48 512 540 840} $\bullet$ & 
+                \href{mailto:rolbieckidev@gmail.com}{rolbieckidev@gmail.com} $\bullet$ & 
+                \href{https://www.linkedin.com/in/mrolbiecki/}{linkedin/mrolbiecki} $\bullet$ & 
+                \href{https://github.com/mrolbiecki/}{github/mrolbiecki}
+        \end{tabular}
+        \vspace{1em}
+    \end{center}    
+    \vspace{-0.75em}
+    \subfile{subsections/statement.tex}
+    \subfile{subsections/education.tex}
+    \subfile{subsections/awards.tex}
+    \subfile{subsections/work_ex.tex}
+    \subfile{subsections/activities.tex} 
+    \subfile{subsections/tools.tex}
+  
+\end{document}
+
+
+
+
