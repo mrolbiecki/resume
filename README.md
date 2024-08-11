@@ -1,1 +1,1 @@
-This is my updated resum.
+This is my updated resume.
