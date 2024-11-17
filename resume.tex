@@ -8,6 +8,7 @@
 \usepackage{tgbonum}
 \usepackage{subfiles}
 \usepackage{titlesec} 
+\usepackage{multicol}
 
 \titlespacing*{\section}{0pt}{1\baselineskip}{0.2\baselineskip}
 
@@ -17,7 +18,7 @@
 \newlength{\remaining}
 \renewcommand{\section}[1]{%
   \vspace{0.4em}\setlength{\remaining}{\textwidth-\widthof{\uppercase{#1}}}
-    \noindent\underline{\fontsize{9}{15}\bfseries\uppercase{#1}\hspace*{\remaining}} \\
+    \noindent\underline{\fontsize{8}{12}\bfseries\uppercase{#1}\hspace*{\remaining}} \\
 }
 \renewcommand{\subsection}[3]{
     \noindent\textbf{#1} | \emph{#2} \hfill #3
@@ -27,7 +28,7 @@
 \begin{document}
     \fontencoding{T1}
     \fontfamily{phv}
-    \fontsize{9}{15}
+    \fontsize{8}{12}
     \selectfont
     \begin{center}
         \begin{center}
@@ -43,12 +44,12 @@
         \vspace{1em}
     \end{center}    
     \vspace{-0.75em}
-    \subfile{subsections/statement.tex}
     \subfile{subsections/education.tex}
-    \subfile{subsections/awards.tex}
-    \subfile{subsections/work_ex.tex}
+    \subfile{subsections/work-experience.tex}
+    \subfile{subsections/achievements.tex}
+    \subfile{subsections/personal-projects.tex}
     \subfile{subsections/activities.tex} 
-    \subfile{subsections/tools.tex}
+    \subfile{subsections/skills.tex}
   
 \end{document}
 
