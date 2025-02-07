@@ -2,13 +2,16 @@
 \usepackage{calc}
 \usepackage[top=0.5in,bottom=0.63in,right=0.75in,left=0.75in]{geometry}
 \usepackage{hyperref}
-% \usepackage{times}
 \usepackage{enumitem}
 \usepackage{fontenc}
 \usepackage{tgbonum}
 \usepackage{subfiles}
 \usepackage{titlesec} 
 \usepackage{multicol}
+
+\pretolerance=10000
+\tolerance=2000
+\emergencystretch=10pt
 
 \titlespacing*{\section}{0pt}{1\baselineskip}{0.2\baselineskip}
 
@@ -22,6 +25,9 @@
 }
 \renewcommand{\subsection}[3]{
     \noindent\textbf{#1} | \emph{#2} \hfill #3
+}
+\newcommand{\subsectionedu}[3]{
+	\noindent\textbf{#1}  \emph{#2} \hfill #3 \break
 }
 \pagenumbering{gobble}
 
@@ -44,15 +50,103 @@
         \vspace{1em}
     \end{center}    
     \vspace{-0.75em}
-    \subfile{subsections/education.tex}
-    \subfile{subsections/work-experience.tex}
-    \subfile{subsections/achievements.tex}
-    \subfile{subsections/personal-projects.tex}
-    \subfile{subsections/activities.tex} 
-    \subfile{subsections/skills.tex}
-  
+
+	\section{Education}
+	\subsectionedu{University of Warsaw - Faculty of Mathematics, Informatics and Mechanics}{}{Oct 2023 - Expected Jun 2026}
+	BSc in Computer Science, Warsaw, Poland \hfill
+
+	\begin{itemize}
+		\item \textbf{Relevant coursework:} Concurrent Programming (Distributed and Parallel Systems), Databases, Object-Oriented Programming, Computer Architecture, Operating Systems, Algorithms and Data Structures.
+		\item \textbf{Upcoming by Internship Start:} Machine Learning, Web Application Development.
+	\end{itemize}
+
+	\vspace{0.75em}
+
+    \section{Experience}
+    \subsection{Junior Software Developer}{Atinea}{Jun 2024 - Present}
+    \begin{itemize}
+        \item Developed database web application using \textbf{MySQL} on \textbf{Linux} environment.
+        \item Learned NianioLang within 1 week, showcasing ability to learn new programming languages as needed by project requirements.
+        \item Improved the efficiency of complex \textbf{SQL} query execution by reducing time complexity through the application of graph algorithms and advanced data structures, resulting in better scalability and performance.
+    \end{itemize}
+	\vspace{0.5em}
+
+    \subsection{Problemsetter}{Instakod}{Jun 2022 - Present}
+    \begin{itemize}
+        \item Designed problems for "Instalogik", an annual math and programming contest, driving engagement in STEM education for primary school students.
+        \item Contributed to a 35\% increase in participation in the second year, growing from 9K to 12K+ students.
+    \end{itemize}
+    \vspace{0.5em}
+
+    \subsection{Computer Science Tutor}{Instakod, IT korepetycje}{Apr 2022 - Aug 2024}
+    \begin{itemize}
+        \item Delivered tutoring sessions in \textbf{C++} and \textbf{Python}, focusing on algorithms and programming contests preparation for 20+ students.
+    \end{itemize}
+    
+    \vspace{0.75em}
+
+    \section{Personal Projects and Certifications}
+    \subsection{University Projects}{University of Warsaw}{Oct 2023 - Present}
+    \begin{itemize}
+        \item Parallelized solution in \textbf{C} using \textbf{pthreads} for a combinatorial problem, focusing on \textbf{scalability} for a large number of threads. \href{https://github.com/mrolbiecki/university-projects/tree/main/concurrent-programming/parallel-combinatorics}{github link}.
+        \item \textbf{C} library for performing arithmetic operations on approximate values. \href{https://github.com/mrolbiecki/university-projects/tree/main/introductory-programming/arithmetic-of-approximate-values}{github link}.
+        \item \textbf{Concurrent} boolean circuit solver in \textbf{Java}, enabling parallel evaluation of complex boolean expressions. \href{https://github.com/mrolbiecki/university-projects/tree/main/concurrent-programming/circuit-solver}{github link}.
+        \item Data analysis project in \textbf{Python}, leveraging \textbf{pandas} and \textbf{matplotlib} to process and visualize DrugBank data. \href{https://github.com/mrolbiecki/university-projects/tree/main/python-course/data-analysis}{github link}.
+    \end{itemize}
+    \vspace{0.5em}
+
+    \subsection{Algorithms and Data Structures Solutions}{}{Aug 2021 - Present}
+    \begin{itemize}
+        \item Solved over 500 complex problems during live contests or training. \href{https://github.com/mrolbiecki/competitive-programming-solutions}{github link}.
+    \end{itemize}
+    \vspace{0.5em}
+    
+    \subsection{NVIDIA Fundamentals of Deep Learning}{Remote}{Aug 2024}
+    \begin{itemize}
+        \item Completed a workshop on deep learning fundamentals, utilizing the \textbf{PyTorch} library to train neural networks for solving real-world challenges in \textbf{computer vision} and \textbf{natural language processing}.
+    \end{itemize}
+    
+    \vspace{0.75em}
+
+    \section{Achievements}
+    \subsection{Finalist of Polish Olympiad in Informatics}{Warsaw}{Mar 2023}
+    \begin{itemize}
+        \item Ranked in the top 100 out of over 1,400 participants from the best Polish high schools, demonstrating advanced problem-solving skills in algorithms and data structures.
+    \end{itemize}
+    
+    \vspace{0.75em}
+
+    \section{Leadership / Activities}
+    \subsection{Assistant Unit Leader}{Związek Harcerstwa Rzeczypospolitej (Boy Scouts), Bytów}{Mar 2021 - Present}
+    \begin{itemize}
+        \item Co-organized multiple large-scale events, including 3 summer camps for over 100 participants, each lasting 4 weeks, enhancing team collaboration and social skills.
+        \item Led and coordinated groups of 20+ members, planning and executing complex tasks such as setting up campsites, demonstrating strong organizational and leadership abilities.
+    \end{itemize}
+
+    \subsection{Volunteering}{Various Charities}{}
+    \begin{itemize}
+        \item Regularly involved in charity work, including assisting with local charity events in my hometown and participating in high-impact initiatives, such as supporting refugees at the Polish-Ukrainian border during a humanitarian crisis.
+    \end{itemize}
+    
+    \vspace{0.75em}
+
+    \section{Skills}
+    \vspace{-1em}
+    \begin{multicols}{2}
+        \subsection{Tools and Technologies}{}{}
+        \begin{itemize}
+            \item Linux, Git, Office, MySQL, PostgreSQL, LaTeX.
+        \end{itemize}
+
+        \subsection{Languages}{}{}
+        \begin{itemize}
+            \item Polish (Native), English (C1), German (A2).
+        \end{itemize}
+
+        \subsection{Programming Languages}{}{}
+        \begin{itemize}
+            \item C++, C, Python, SQL, Java, Bash.
+            \item Quick at learning new languages as required by project needs.
+        \end{itemize}
+    \end{multicols}
 \end{document}
-
-
-
-
