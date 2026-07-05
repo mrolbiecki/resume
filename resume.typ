@@ -19,6 +19,13 @@
   paper: "a4",
   author-position: center,
   personal-info-position: center,
+  // Snapshot note pinned to the bottom of every page. The date auto-fills from
+  // the compile date, so it always reflects the version being built.
+  footer: [
+    #set text(size: 8pt, fill: luma(130))
+    #set align(center)
+    This is a snapshot from #datetime.today().display("[month repr:long] [year]"). The latest version is always at #link("https://github.com/mrolbiecki/resume/blob/main/resume.pdf")[github.com/mrolbiecki/resume].
+  ],
 )
 
 == Experience

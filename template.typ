@@ -21,6 +21,7 @@
   author-font-size: 20pt,
   font-size: 10pt,
   lang: "en",
+  footer: none,
   body,
 ) = {
 
@@ -41,6 +42,7 @@
   set page(
     margin: (0.5in),
     paper: paper,
+    footer: footer,
   )
 
   // Link styles
