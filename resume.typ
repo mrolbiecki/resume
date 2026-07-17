@@ -71,7 +71,7 @@
   dates: dates-helper(start-date: "Oct 2023", end-date: "Jul 2026"),
   degree: "BSc in Computer Science",
 )
-- GPA: *4.48/5.00*
+- Final grade: *4.61/5.00*
 - Advanced coursework in algorithms, distributed systems, and automata theory.
 - Thesis: _FormalInception-ATP: Agentic System for Automated Theorem Proving in Lean 4_ --- we built an agentic harness for proving math theorems that achieved a *100% success rate* on the _miniF2F_ benchmark with inexpensive models. As far as we know, we were the first to saturate this benchmark.
 
